@@ -21,14 +21,12 @@
             required
             :minlength="nombreMinLength"
             :maxlength="nombreMaxLength"
-            no-espacios
           > <!-- Se le pone name igual al del field-messages para que queden relacionados -->
       
           <!-- Mensajes de validación -->
           <field-messages name="nombre" show="$dirty">
             <div slot="required" class="alert alert-danger mt-1">Campo requerido</div>
             <div slot="minlength" class="alert alert-danger mt-1">Este campo debe poseer al menos {{ nombreMinLength }} caracteres</div>
-            <div slot="no-espacios" class="alert alert-danger mt-1">Este campo no permite espacios intermedios</div>
           </field-messages>
         </validate>     
 
